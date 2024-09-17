@@ -1,0 +1,222 @@
+
+/* Font: Mulish */
+html, body {
+  font-family: 'Mulish', sans-serif;
+}
+
+/* General styles */
+a{
+  text-decoration: none;
+}
+.fw-bolder {
+  font-weight: 900 !important;
+}
+.btn.btn-navy-blue {
+  background-color: #04579b !important;
+  color: #fff !important;
+}
+.text-navy-blue {
+  color: #04579b !important;
+}
+.form-control:focus {
+  box-shadow: none;
+  z-index: 3;
+}
+.full-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slick-next, .slick-prev {
+  width: 40px;
+  height: 40px;
+}
+.slick-prev {
+  left: -12px;
+  z-index: 1;
+}
+.slick-next {
+  right: -12px;
+}
+.slick-next::before,
+.slick-prev::before {
+  font-size: 40px;
+  color: #04579b;
+}
+
+/* Header section [START] */
+header .sticky-scroll-top .social-icon {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+#scroll-to-top{
+  display: none;
+}
+header .sticky-whatsapp .social-icon {
+  width: 46px;
+  height: 46px;
+  display: block;
+}
+header .social-icon svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+header .sticky-scroll-top,
+header .sticky-whatsapp {
+  position: fixed;
+  bottom: 10px;
+  z-index: 30;
+}
+header .sticky-scroll-top {
+  right: 10px;
+}
+header .sticky-scroll-top .social-icon {
+  cursor: pointer;
+}
+header .sticky-whatsapp {
+  right: 5px;
+  bottom: 60px;
+}
+/* Header section [END] */
+
+/* Promo Page Banner section [START] */
+section#promo-banner .page-banner {
+  background-position: left center;
+  background-size: cover;
+  transition: background-image 1s ease-in;
+}
+.page-banner .banner-text {
+  background: linear-gradient(to right, #000, #0000);
+}
+.page-banner .banner-text h1 {
+  font-size: 1.5rem;
+}
+.page-banner .banner-text h2 {
+  font-size: 1rem;
+}
+/* Promo Page Banner section [END] */
+
+/* promo contact page start */
+.topImage {
+  transition: transform 1s ease, opacity 1s ease, position 1s ease;
+  position: relative;
+  top: -250px;
+  left: unset;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.scrolled{
+  transform: translateY(80px) scale(1.1); /* Move down and slightly enlarge */
+  opacity: 0.8; /* Slightly fade out */
+}
+
+/* Promo Page Discover section [START] */
+section#promo-discover {
+  background-color: #ebf5ff !important;
+}
+/* Promo Page Discover section [END] */
+
+/* Promo Page Products section [START] */
+section#promo-products .desc-box {
+  margin-top: 20em;
+  background-color: #04579bb0 !important
+}
+.owl-slider{
+  position: relative;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+}
+.item{
+  position: absolute;
+  width: 300px;
+  height: 320px;
+  text-align: justify;
+  border-radius: 10px;
+  transition: 0.5s;
+  left: calc(50% - 150px);
+  top: 0;
+}
+#next, #prev{
+  position: absolute;
+  top: 30%;
+  color: #181717;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  left: 5px;
+}
+#next{
+  left: unset;
+  right: 5px;
+}
+/* Promo Page Products section [END] */
+
+/* Footer section [START] */
+footer#promo-footer {
+  background: #2c2b2b;
+}
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/promo/icons/sprite.png');
+    background-repeat: no-repeat;
+}
+/* Footer section [END] */
+
+/* Thankyou popup [START] */
+.thankyou-modal .modal-body {
+  padding: 3em;
+}
+.thankyou-modal .btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+.thankyou-modal svg.bi {
+  width: 80px;
+  height: 80px;
+  fill: #07e47f;
+}
+.thankyou-modal a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.thankyou-modal a:hover {
+  opacity: 0.8;
+}
+/* Thankyou popup [END] */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  section#promo-banner .page-banner {
+    min-height: 32rem;
+  }
+  .page-banner .banner-text h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .page-banner .banner-text h2 {
+    font-size: calc(1.325rem + .9vw);
+  }
+  .slick-prev {
+    left: -40px;
+    z-index: 1;
+  }
+  .slick-next {
+    right: -40px;
+  }
+}
+/* media screen 974px */
+@media (max-width: 974px) {
+ .topImage{
+  top: unset;
+ }
+}
